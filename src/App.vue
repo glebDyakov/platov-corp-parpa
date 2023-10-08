@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-row justify="center">
+    <v-row justify="center" class="header">
       <v-col cols="12" md="8">
         <v-toolbar color="transparent" height="100">
           <v-toolbar-title>
@@ -25,6 +25,9 @@ export default {
 </script>
 
 <style scoped>
+.header {
+  max-height: 100px;
+}
 .link {
   cursor: pointer;
 }
