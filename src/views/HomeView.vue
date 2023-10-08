@@ -55,8 +55,20 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: 'HomeView',
+  mounted() {
+    axios.get('https://api.platovcorp.site/product.json')
+      .then(function (response) {
+        // handle success
+        console.log(response);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+  }
 }
 </script>
 
